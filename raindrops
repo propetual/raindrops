@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Raindrops - Dynamic time-of-day ambient rain sound daemon."""
+"""Raindrops - Dynamic time-of-day rain sound daemon."""
 
 import os
 import sys
