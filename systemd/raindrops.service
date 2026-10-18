@@ -1,0 +1,13 @@
+[Unit]
+Description=Raindrops - Ambient rain audio daemon
+Documentation=https://github.com/propetual/raindrops
+After=sound.target pipewire.service pulseaudio.service
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/raindrops run
+Restart=on-failure
+RestartSec=5s
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,21 @@
+- [x] make it run at start-up
+- [x] listen to and download rain sounds of different intensities (maybe document them)
+	- [x] drizzle at the start
+	- [x] it gets energized
+	- [x] its actually heavy
+	- [x] it dies down
+	- [x] that last pitter-patter
+- [x] group them all in their individual folders
+- [x] put all those as sub-folders to an individual folder
+- [x] find a media player that plays in the background or figure out how to get it innately playing or within the terminal but throughout all workspaces
+	- [x] if you choose the terminal , find a way to fix it to the back workpaces if it must open one...(i dont think it has to)
+	- [x] if a media player option is taken, add a taskbar and just have it minimized there
+- [x] have the script parse through the main folder and its subs every time it starts and pick at random which one to start playing
+- [x] add a 'turn-off' feature
+- [x] make it able to check system time
+- [x] make some apps auto-stop the script ; like media players even in-browser ones
+- [ ] make that research on average rain amounts at different times of the day
+- [x] incorporate the data on average rain and time into the script to help it pick randomly from the sub-folders(sub-folders are selected according to system time + research data... may require renaming of something)
+- [ ] make the time selection more specific
+- [ ] think about that changing background thing (thats why you documented  the sources)
+- [ ] add a weather forecast thing to "eww"? if you install it; make it ASCII not actually graphical

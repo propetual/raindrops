@@ -1,0 +1,25 @@
+# Audio files (do not commit audio assets to git)
+*.wav
+*.mp3
+*.ogg
+*.flac
+*.m4a
+*.aac
+*.opus
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Runtime, sockets & logs
+*.sock
+*.pid
+*.log
+
+# System & editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

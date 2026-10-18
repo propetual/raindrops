@@ -1,0 +1,3 @@
+- you could link it to the weather forecast of your location or any place of your choosing and just listen to the weather instead of seeing half-suns and shit
+- integrating AI to keep growing the database of sounds of weather and matching it to respective official measurements, conditions on ground and just accurate weather noises
+- maybe even get some video and make it changing backgrounds

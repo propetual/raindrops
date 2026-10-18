@@ -1,0 +1,2 @@
+gradually throughout the day, the sound of rain falling ; it grows  and dies down as the time of day passes. depending on what the research data says about average rain intensity but for now... morning = light drizzle -> moderate .afternoon = moderate -> heavy rain . evening - night =  heavy rain -> final pitter-patter
+so i guess at the very beginning it will just cycle through the downloaded rain sounds
