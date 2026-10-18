@@ -1,26 +1,26 @@
-# 🌧 Raindrops
+#  Raindrops
 
-> A lightweight, dynamic time-of-day ambient rain sound daemon for Linux.
+> A lightweight, dynamic time-of-day  rain sound daemon for Linux.
 
-Raindrops runs silently in the background, smoothly playing rain sounds that organically evolve with the time of day—gentle morning showers, energized afternoon downpours, and soft night pitter-patter. It automatically ducks or pauses whenever you play music or watch videos in your browser, and seamlessly resumes when your media stops.
+Raindrops runs silently in the background, smoothly playing rain sounds that change with the time of day—gentle morning drizzles, energized afternoon showers, and soft nightly pitter-patters. It automatically ducks or pauses whenever you play music or watch videos in your browser, and seamlessly resumes when your media stops.
 
 ---
 
-## ✨ Features
+##  Features
 
-- **🕒 Time-of-Day Rain Progression:**
+- ** Time-of-Day Rain Progression:**
   - `Morning` (06:00 – 12:00): Gentle drizzle and moderate rain.
   - `Afternoon` (12:00 – 18:00): Energized showers and heavy rain.
   - `Night` (18:00 – 06:00): Heavy rain dying down to calm night pitter-patter.
-- **🔇 Headless Background Playback:** Powered by headless `mpv` through a Unix IPC socket. Zero terminal windows, completely unobtrusive across all virtual workspaces.
+- ** Headless Background Playback:** Powered by headless `mpv` through a Unix IPC socket. Zero terminal windows, completely unobtrusive across all virtual workspaces.
 - **⏸ Smart Media Ducking (Auto-Pause):** Automatically pauses rain when browser videos, YouTube, Spotify, or VLC start playing via `playerctl` (MPRIS), and smoothly fades rain back in when media stops.
-- **🌊 Smooth Volume Fading:** Non-blocking cinematic volume fades between tracks, pauses, and resumes—no harsh audio cut-offs.
-- **💻 Full CLI Control:** Intuitive terminal command dashboard (`raindrops status`, `toggle`, `next`, `volume`, `start`, `stop`).
-- **⚙️ Systemd Service Integration:** Run automatically on boot/login via a systemd user unit.
+- ** Smooth Volume Fading:** Non-blocking cinematic volume fades between tracks, pauses, and resumes—no harsh audio cut-offs.
+- ** Full CLI Control:** Intuitive terminal command dashboard (`raindrops status`, `toggle`, `next`, `volume`, `start`, `stop`).
+- ** Systemd Service Integration:** Run automatically on boot/login via a systemd user unit.
 
 ---
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Requirements
 Ensure you have Python 3 and MPV installed:
@@ -33,9 +33,9 @@ sudo pacman -S mpv python playerctl
 Organize your audio files into subfolders corresponding to the time slots:
 ```text
 ~/Downloads/raindrops/
-├── morning/        # e.g. morning_1.wav, morning_2.wav
-├── afternoon/      # e.g. afternoon_1.ogg, afternoon_2.wav
-└── night/          # e.g. night_1.wav, night_2.wav
+├── morning/        # e.g. morning_1.ogg, morning_2.wav
+├── afternoon/      # e.g. afternoon_1.mp3, afternoon_2.flac
+└── night/          # e.g. night_1.mp3, night_2.m4a
 ```
 *(Supports `.wav`, `.ogg`, `.mp3`, `.flac`, `.m4a`)*.
 
@@ -47,7 +47,7 @@ Run the installer to link `raindrops` to `~/.local/bin` and install the systemd 
 
 ---
 
-## 🎮 CLI Usage
+##  CLI Usage
 
 ```bash
 raindrops start          # Start background daemon
@@ -74,7 +74,7 @@ Running `raindrops status` outputs a clean status card:
 
 ---
 
-## 🔄 Run Automatically at Login
+##  Run Automatically at Login
 
 Enable the systemd user service so Raindrops starts with your session:
 ```bash
@@ -89,12 +89,12 @@ systemctl --user disable raindrops
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 Custom configuration is automatically stored at `~/.config/raindrops/config.json`:
 ```json
 {
-    "audio_dir": "/home/geldof/Downloads/raindrops",
+    "audio_dir": "/home/place/Downloads/raindrops",
     "volume": 65,
     "fade_duration": 2.0,
     "poll_interval": 1.0,
@@ -110,7 +110,7 @@ Custom configuration is automatically stored at `~/.config/raindrops/config.json
 
 ---
 
-## 🗺️ Roadmap & Future Ideas
+##  Roadmap & Future Ideas
 
 - [ ] Connect with Open-Meteo or wttr.in to blend real-time outdoor local weather into the diurnal simulation.
 - [ ] ASCII weather & rain status widget for `eww` / Waybar / Polybar.
@@ -119,6 +119,6 @@ Custom configuration is automatically stored at `~/.config/raindrops/config.json
 
 ---
 
-## 📄 License
+##  License
 
 MIT
