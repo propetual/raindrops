@@ -8,19 +8,19 @@ BIN_TARGET="$HOME/.local/bin/raindrops"
 SERVICE_DIR="$HOME/.config/systemd/user"
 SERVICE_TARGET="$SERVICE_DIR/raindrops.service"
 
-echo "🌧 Installing Raindrops..."
+echo " Installing Raindrops..."
 
 # 1. Symlink executable
 mkdir -p "$HOME/.local/bin"
 ln -sf "$SCRIPT_DIR/raindrops" "$BIN_TARGET"
 chmod +x "$SCRIPT_DIR/raindrops"
-echo "✔ Symlinked binary to $BIN_TARGET"
+echo " Symlinked binary to $BIN_TARGET"
 
 # 2. Install systemd user service
 mkdir -p "$SERVICE_DIR"
 cp "$SCRIPT_DIR/systemd/raindrops.service" "$SERVICE_TARGET"
 systemctl --user daemon-reload
-echo "✔ Installed systemd service to $SERVICE_TARGET"
+echo "Installed systemd service to $SERVICE_TARGET"
 
 echo ""
 echo "Raindrops is ready!"
